@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.customerDetail.tabs.customerDetail.CustomerDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/refer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorWhite"
+                android:text="KYC Method Details"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="14dp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="KYC Status"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <!--<EditText-->
+                        <!--android:layout_width="150dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/background__edittext_rectangular"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:inputType="text"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:hint=""-->
+                        <!--android:layout_marginRight="10dp"/>-->
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/background__edittext_rectangular">
+
+                    </Spinner>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="KYC Mode"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/radiofaceToFace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Face To Face"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radioNonfaceToFace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non Face To face" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Choose Agent"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="320dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:maxLines="3"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Choose Agent"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <!--<EditText-->
+                        <!--android:layout_width="240dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/background__edittext_rectangular"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:inputType="text"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:hint=""-->
+                        <!--android:layout_marginRight="10dp"/>-->
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/background__edittext_rectangular">
+
+                    </Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Choose Branch"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <!--<EditText-->
+                        <!--android:layout_width="110dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/background__edittext_rectangular"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:inputType="text"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:hint=""-->
+                        <!--android:layout_marginRight="10dp"/>-->
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAlignment="center"
+                        android:background="@drawable/background__edittext_rectangular"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="SAVE"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/background__edittext_rectangular"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</ScrollView>

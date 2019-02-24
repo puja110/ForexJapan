@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rateExchangeCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/city"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/flagImage"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@drawable/france"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:paddingRight="2dp"/>
+
+        <TextView
+            android:id="@+id/exchangeRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:paddingLeft="2dp"
+            android:text="0.036"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

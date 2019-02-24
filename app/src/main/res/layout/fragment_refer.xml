@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragment.ReferFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refer"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="5dp"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:hint="Enter name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:hint="Enter email"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:hint="Enter phone"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background__edittext_rectangular"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:hint="Benefieiary name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background__edittext_rectangular"
+                android:hint="Add"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background__edittext_rectangular"
+                android:hint="Contact"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/voucher"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                android:text="Voucher"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_action_home"
+        />
+
+    <item android:id="@+id/serviceFees"
+        android:title="Service Fees"
+        android:icon="@drawable/ic_action_money_bag"
+        />
+
+    <item android:id="@+id/exchangeRate"
+        android:title="Exchange Rate"
+        android:icon="@drawable/ic_action_rate"
+        />
+
+    <item android:id="@+id/aboutUs"
+        android:title="About Us"
+        android:icon="@drawable/ic_action_about_us"
+        />
+
+    <item android:id="@+id/contact"
+        android:title="Contact"
+        android:icon="@drawable/ic_action_contact_us"
+        />
+
+    <item android:id="@+id/faq"
+        android:title="FaQ"
+        android:icon="@drawable/ic_action_help_faq"
+        />
+
+    <item android:id="@+id/orderForm"
+        android:title="Order FOrm"
+        android:icon="@drawable/ic_action_order"
+        />
+
+    <item android:id="@+id/logOut"
+        android:title="Log Out"
+        android:icon="@drawable/ic_action_logout"
+        />
+
+</menu>

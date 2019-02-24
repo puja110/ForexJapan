@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.customerDetail.tabs.customerDetail.CustomerDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/refer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorWhite"
+            android:text="Personal Details"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="14dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="15dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:text="Sender's Name (alphabet)"
+                android:background="@color/colorWhite"
+                android:textSize="12dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background__edittext_rectangular"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:hint="First"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background__edittext_rectangular"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:hint="Mid"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background__edittext_rectangular"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:hint="Last"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Alternative Name (in Kana)"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Alternative Name (in Kanji)"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="70dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="SMBC Card Number"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Yucho Card Number"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Gender"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Telephone"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Mobile No"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint="Enter Mobile No"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorWhite"
+            android:text="Contact Details"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="14dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:text="Select entry method"
+                android:background="@color/colorWhite"
+                android:textSize="12dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <RadioGroup
+                    android:id="@+id/radioZip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/zipcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If you know your zip code, enter from zip code."
+                        android:checked="true" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Zip Code"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="200dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <RadioGroup
+                        android:id="@+id/noZip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/nozipcode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="If you know your zip code, enter from zip code."
+                            android:checked="true" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Prefecture"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="City"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Town"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Street Address - Japanese"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/black"
+                    android:text="Sender Address - Japanese"
+                    android:background="@color/colorWhite"
+                    android:textSize="12dp"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <EditText
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background__edittext_rectangular"
+                        android:padding="10dp"
+                        android:inputType="text"
+                        android:textSize="14dp"
+                        android:hint=""
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

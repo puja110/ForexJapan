@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rateExchangeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gradient_color">
+
+                <RelativeLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Search Location / Service"
+                        android:textSize="12sp"
+                        android:inputType="text"
+                        android:drawablePadding="0dp"
+                        android:drawableLeft="@drawable/ic_action_search"
+                        android:background="@color/colorWhite"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/background_gradient_color"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="1dp"
+                    app:layout_anchor="@+id/lin"
+                    app:layout_anchorGravity="center_horizontal|top">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/sliderView"
+                            android:background="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pagesContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"/>
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:background="@drawable/background_gradient_color">
+
+                <TextView
+                    android:id="@+id/refer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorWhite"
+                    android:text="Refer"
+                    android:textSize="14dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2.5dp"/>
+
+                <TextView
+                    android:id="@+id/customerDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:text="Customer Detail"
+                    android:background="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:padding="15dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/background_gradient_color">
+
+                <TextView
+                    android:id="@+id/trackTransaction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/colorWhite"
+                    android:text="Track Your Transaction"
+                    android:textSize="14dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginRight="2.5dp"/>
+
+                <TextView
+                    android:id="@+id/currencyConvert"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:text="Convert Currency"
+                    android:background="@color/colorWhite"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:padding="15dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
